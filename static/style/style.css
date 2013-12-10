@@ -93,6 +93,7 @@ table td {
   /*background: white !important;*/
   background: transparent !important;
   color: white !important;
+  height: 20px;
 }
 
 table tr.even, table tr.alt, table tr:nth-of-type(even) {
@@ -104,7 +105,31 @@ table td:nth-child(1) {
   font-weight: 200;
   font-size: 16px;
 }
-
+table td i{
+	float: left;
+}
+.bar{
+	position: relative;
+	float: left;
+	height: 100%;
+	margin-left: 10px;
+	width: 140px;
+}
+.histogram-container{
+	position: relative;
+	height:50%;
+	width: 100%;
+}
+.histogram-bar{
+	height: 100%;
+	border: 1px solid white;
+}
+.student-bar{
+	/* background-color: #ed5a5a; */
+}
+.teacher-bar{
+	/* background-color: #52c0ff; */
+}
 .menu {
   position: fixed;
   width: 340px;

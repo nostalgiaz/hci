@@ -12,3 +12,10 @@ $('#open').click(function() {
 			open = false;
 		}
 });
+
+(function(){
+	$('.histogram-bar').each(function(){
+		var $this = $(this);
+		$this.width($this.data('val') + '%');
+	});
+})();
