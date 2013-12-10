@@ -7,7 +7,7 @@ body,html{
     height: 100%;
     top: 0;
     z-index: 1000;
-    background-color: #0D77B6;
+    background-color: rgba(0,0,0,0.5);
     -webkit-transition: right 0.3s ease;
     -moz-transition: right 0.3s ease;
     transition: right 0.3s ease;
@@ -24,6 +24,6 @@ body,html{
     left: -80px;
     height: 80px;
     width: 80px;
-    background-color: #0D77B6;
+    background-color: rgba(0,0,0,0.5);
     cursor: pointer;
 }
