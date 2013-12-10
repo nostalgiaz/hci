@@ -7,8 +7,12 @@ body {
   color: #ffffff;
 }
 
-h1, h3, h4 {
+h1, h3, h4, h5 {
   color: #ffffff;
+}
+
+h5 {
+  font-size: 95%;
 }
 
 h3 {
@@ -144,4 +148,9 @@ table td:nth-child(1) {
 #social i {
   padding: 0 2px;
   cursor: pointer;
+}
+
+h5 em {
+  text-align: right;
+  display: block;
 }
