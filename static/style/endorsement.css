@@ -1,0 +1,20 @@
+body,html{
+	height: 100%;
+}
+.menu{
+	position: fixed;
+	width: 340px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: #0D77B6;
+    -webkit-transition: right 0.3s ease;
+    -moz-transition: right 0.3s ease;
+    transition: right 0.3s ease;
+}
+.menu-close{
+    right: -340px;
+}
+.menu-open{
+	right: 0px;
+}
