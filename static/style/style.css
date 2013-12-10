@@ -1,6 +1,15 @@
 body {
   background-size: cover;
-  color: #ddd;
+  color: #ffffff;
+}
+
+h1, h3 {
+  color: #ffffff;
+}
+
+h3 {
+  margin: 0;
+  padding-left: 20px;
 }
 
 i {
@@ -12,66 +21,107 @@ i {
   max-width: 100%;
 }
 
-#sidebar {
-  background: rgba(187, 187, 187, 0.5);
-  /*background: white;*/
-  margin-top: 25px;
-  text-align: center;
-  box-shadow: 0 0 5px white;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-#sidebar h1 {
-  color: white;
+.row .row {
   margin: 0;
 }
 
-#photo {
-  position: relative;
+#sidebar .row > div {
+  background: rgba(71, 163, 218, 1);
 }
 
-#photo i {
-  position: absolute;
-  top: 10px;
-  right: 120px;
-  font-size: 50px;
+#head {
+  height: 30px;
+  /*background: #749AFF;*/
 }
 
-#photo img {
+#bio {
+  background: rgba(13, 119, 182, 1);
+  /*height: 30px;*/
+  /*background: #60E8B9;*/
+}
+
+#bio div {
+  background: rgba(13, 119, 182, 1) !important;
+}
+
+#bio .large-5 {
+    text-align: right;
+}
+
+#bio img {
   border-radius: 100%;
-  border: 1px solid white;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  border: 3px solid white;
+  margin: 15px 0;
 }
 
 #description {
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.5;
-  text-align: justify;
+  /*text-align: justify;*/
   margin-bottom: 10px;
   font-weight: 200;
 }
 
+#info {
+  /*background: #C8FF79;*/
+}
 
+#work-and-edu {
+  height: 30px;
+  /*background: #E2BF67;*/
+}
+
+#skills {
+  /*background: #FF9278;*/
+}
+
+
+/*#sidebar {*/
+  /*background: rgba(187, 187, 187, 0.5);*/
+  /*margin-top: 25px;*/
+  /*text-align: center;*/
+  /*box-shadow: 0 0 5px white;*/
+  /*border-top-right-radius: 5px;*/
+  /*border-bottom-right-radius: 5px;*/
+/*}*/
+/**/
+/*#sidebar h1 {*/
+  /*color: white;*/
+  /*margin: 0;*/
+/*}*/
+/**/
+/*#photo {*/
+  /*position: relative;*/
+/*}*/
+/**/
+/*#photo i {*/
+  /*position: absolute;*/
+  /*top: 10px;*/
+  /*right: 120px;*/
+  /*font-size: 50px;*/
+/*}*/
+/**/
+
+/**/
+
+/**/
+/**/
 table {
   width: 100%;
-  border-radius: 5px;
+  margin: 0;
+  /*border-color: rgba(71, 163, 218, 1) !important;*/
+  /*background: rgba(71, 163, 218, 1) !important;*/
 }
 
 table td {
   padding: 3px 5px !important;
   width: 50% !important;
   background: white !important;
+  /*background: rgba(71, 163, 218, 1) !important;*/
+  /*color: white !important;*/
 }
 
 table td:nth-child(1) {
   text-align: right;
   font-weight: bold;
 }
-
-/*#info {*/
-/*border: 1px solid white;*/
-/*text-align: left;*/
-/*padding: 5px;*/
-/*}*/
