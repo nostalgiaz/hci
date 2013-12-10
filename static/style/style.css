@@ -3,13 +3,15 @@ body {
   color: #ffffff;
 }
 
-h1, h3 {
+h1, h3, h4{
   color: #ffffff;
 }
 
 h3 {
-  margin: 0;
+  background: #333;
+  margin: 0 0 5px;
   padding-left: 20px;
+  padding-bottom: 5px;
 }
 
 i {
@@ -25,8 +27,10 @@ i {
   margin: 0;
 }
 
-#sidebar .row > div {
+#sidebar > .row > div {
   background: rgba(71, 163, 218, 1);
+  border-bottom: 3px solid #333;
+  padding: 0 0 20px 0;
 }
 
 #head {
@@ -35,7 +39,7 @@ i {
 }
 
 #bio {
-  background: rgba(13, 119, 182, 1);
+  background: rgba(13, 119, 182, 1) !important;
   /*height: 30px;*/
   /*background: #60E8B9;*/
 }
@@ -66,15 +70,21 @@ i {
   /*background: #C8FF79;*/
 }
 
-#work-and-edu {
-  height: 30px;
+#work {
   /*background: #E2BF67;*/
+}
+
+#edu {
+
 }
 
 #skills {
   /*background: #FF9278;*/
 }
 
+.entry {
+  padding-left: 40px;
+}
 
 /*#sidebar {*/
   /*background: rgba(187, 187, 187, 0.5);*/
@@ -109,19 +119,20 @@ i {
 table {
   width: 100%;
   margin: 0;
-  /*border-color: rgba(71, 163, 218, 1) !important;*/
-  /*background: rgba(71, 163, 218, 1) !important;*/
+  border-color: rgba(71, 163, 218, 1) !important;
+  background: rgba(71, 163, 218, 1) !important;
 }
 
 table td {
   padding: 3px 5px !important;
   width: 50% !important;
-  background: white !important;
-  /*background: rgba(71, 163, 218, 1) !important;*/
-  /*color: white !important;*/
+  /*background: white !important;*/
+  background: rgba(71, 163, 218, 1) !important;
+  color: white !important;
 }
 
 table td:nth-child(1) {
   text-align: right;
-  font-weight: bold;
+  font-weight: 200;
+  font-size: 16px;
 }
