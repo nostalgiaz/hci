@@ -1,5 +1,5 @@
 body {
-  background-size: cover;
+  background-size: cover !important;
   color: #ffffff;
 }
 
@@ -54,7 +54,7 @@ i {
 
 #bio img {
   border-radius: 100%;
-  border: 3px solid white;
+  border: 3px solid rgba(255,255,255,0.8);
   margin: 15px 0;
 }
 
