@@ -3,7 +3,7 @@ body {
   color: #ffffff;
 }
 
-h1, h3, h4{
+h1, h3, h4 {
   color: #ffffff;
 }
 
@@ -51,7 +51,7 @@ i {
 }
 
 #bio .large-5 {
-    text-align: right;
+  text-align: right;
 }
 
 #bio img {
@@ -89,28 +89,28 @@ i {
 }
 
 /*#sidebar {*/
-  /*background: rgba(187, 187, 187, 0.5);*/
-  /*margin-top: 25px;*/
-  /*text-align: center;*/
-  /*box-shadow: 0 0 5px white;*/
-  /*border-top-right-radius: 5px;*/
-  /*border-bottom-right-radius: 5px;*/
+/*background: rgba(187, 187, 187, 0.5);*/
+/*margin-top: 25px;*/
+/*text-align: center;*/
+/*box-shadow: 0 0 5px white;*/
+/*border-top-right-radius: 5px;*/
+/*border-bottom-right-radius: 5px;*/
 /*}*/
 /**/
 /*#sidebar h1 {*/
-  /*color: white;*/
-  /*margin: 0;*/
+/*color: white;*/
+/*margin: 0;*/
 /*}*/
 /**/
 /*#photo {*/
-  /*position: relative;*/
+/*position: relative;*/
 /*}*/
 /**/
 /*#photo i {*/
-  /*position: absolute;*/
-  /*top: 10px;*/
-  /*right: 120px;*/
-  /*font-size: 50px;*/
+/*position: absolute;*/
+/*top: 10px;*/
+/*right: 120px;*/
+/*font-size: 50px;*/
 /*}*/
 /**/
 
@@ -137,4 +137,12 @@ table td:nth-child(1) {
   text-align: right;
   font-weight: 200;
   font-size: 16px;
+}
+
+.menu-button {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 50px;
+  line-height: 80px;
+  border: 1px solid #333;
 }
