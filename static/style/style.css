@@ -1,3 +1,7 @@
+body, html {
+  height: 100%;
+}
+
 body {
   background-size: cover !important;
   color: #ffffff;
@@ -12,6 +16,10 @@ h3 {
   margin: 0 0 5px;
   padding-left: 20px;
   padding-bottom: 5px;
+}
+
+em {
+  font-size: 80%;
 }
 
 i {
@@ -29,23 +37,18 @@ i {
 
 #sidebar > .row > div {
   padding: 0 0 20px 0;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-#head {
-  height: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  margin-top: 10px;
 }
 
 #bio {
-  margin-top: 50px;
+  border-top: 5px solid #333;
+  margin-top: 50px !important;
   /*border-color: #333;*/
   /*border-color: rgba(255, 255, 255, 0.8);*/
   /*border-style: solid;*/
   /*border-width: 1px 2px;*/
   /*border-width: 1px 0;*/
-}
-
-#bio div {
 }
 
 #bio .large-5 {
@@ -54,7 +57,7 @@ i {
 
 #bio img {
   border-radius: 100%;
-  border: 3px solid rgba(255,255,255,0.8);
+  border: 3px solid #333;
   margin: 15px 0;
 }
 
@@ -67,6 +70,10 @@ i {
 
 .entry {
   padding-left: 40px;
+}
+
+#skills {
+  margin-bottom: 40px;
 }
 
 table {
@@ -94,9 +101,37 @@ table td:nth-child(1) {
   font-size: 16px;
 }
 
+.menu {
+  position: fixed;
+  width: 340px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: right .3s ease;
+  -moz-transition: right .3s ease;
+  transition: right .3s ease;
+}
+
+.menu-close {
+  right: -340px;
+}
+
+.menu-open {
+  right: 0;
+}
+
 .menu-button {
+  position: absolute;
+  top: 20%;
+  left: -80px;
+  height: 80px;
+  width: 80px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
   text-align: center;
   vertical-align: middle;
   font-size: 50px;
   line-height: 80px;
+
 }
