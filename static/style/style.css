@@ -105,31 +105,34 @@ table td:nth-child(1) {
   font-weight: 200;
   font-size: 16px;
 }
-table td i{
-	float: left;
+
+table td i {
+  float: left;
 }
-.bar{
-	position: relative;
-	float: left;
-	height: 100%;
-	margin-left: 10px;
-	width: 140px;
+
+.bar {
+  position: relative;
+  float: left;
+  height: 100%;
+  margin-left: 10px;
+  width: 140px;
 }
-.histogram-container{
-	position: relative;
-	height:50%;
-	width: 100%;
+
+.histogram-container {
+  position: relative;
+  height: 50%;
+  width: 100%;
 }
-.histogram-bar{
-	height: 100%;
-	border: 1px solid white;
+
+.histogram-bar {
+  height: 100%;
+  border: 1px solid white;
 }
-.student-bar{
-	/* background-color: #ed5a5a; */
+
+.teacher-bar {
+  margin-top: -1px;
 }
-.teacher-bar{
-	/* background-color: #52c0ff; */
-}
+
 .menu {
   position: fixed;
   width: 340px;
