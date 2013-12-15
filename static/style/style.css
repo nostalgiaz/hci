@@ -182,3 +182,12 @@ h5 em {
   text-align: right;
   display: block;
 }
+
+#open > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  color: #333;
+  width: 100%;
+}
