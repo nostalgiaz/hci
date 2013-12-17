@@ -306,3 +306,21 @@ legend {
 .edit-page .entry {
 	margin-top: 10px;
 } 
+.edit-page #skills i {
+	cursor: pointer;
+	font-size: 20px;
+}
+.edit-page #skills i:hover {
+	color: #ab0000;
+}
+.add-position {
+	width: 80%;
+	height: 40px;
+	font-size: 20px;
+	display: inline-block;
+	vertical-align: bottom;
+	padding: 0;
+}
+.add-position i {
+	line-height: 40px;
+}
