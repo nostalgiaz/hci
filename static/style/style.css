@@ -247,3 +247,15 @@ h5 em {
 .has-form{
 	width: 800px;
 }
+
+legend{
+	color: black;
+}
+.login{
+	margin-top: 10%;
+	text-align: center;
+}
+.login img{
+	height: 100px;
+	margin-top: 20px;
+}
