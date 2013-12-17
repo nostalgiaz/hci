@@ -233,3 +233,7 @@ h5 em {
   font-size: 16px;
   margin-left: 5px;
 }
+
+[data-time="now"] > strong {
+  color: goldenrod;
+}
