@@ -179,7 +179,16 @@ table td i {
   text-align: right;
   font-size: 20px;
 }
-
+#social > div > ul {
+  text-align: left;
+  list-style: none;
+}
+#social > div > ul i {
+  text-align: left;
+  font-size: 25px;
+  vertical-align: middle;
+  display: inline-block;
+}
 #social i {
   padding: 0 2px;
   cursor: pointer;
@@ -248,18 +257,18 @@ h5 em {
 	height: 29px;
 }
 
-.has-form{
+.has-form {
 	width: 800px;
 }
 
-legend{
+legend {
 	color: black;
 }
-.login{
+.login {
 	margin-top: 10%;
 	text-align: center;
 }
-.login img{
+.login img {
 	height: 100px;
 	margin-top: 20px;
 }
@@ -272,3 +281,28 @@ legend{
   /*color: gainsboro;*/
   padding: 10px;
 }
+
+#title {
+	width: 70%;
+	height: 54px;
+	font-size: 30px;
+}
+#about-me {
+	height: 80px;
+	resize:none;
+}
+.social-edit {
+	display: inline-block !important;
+	margin-left: 10px !important;
+	width: 200px !important;
+}
+.social-icon {
+	display: inline-block;
+	width: 30px;
+}
+.edit-page .entry input {
+	width: 80% !important;
+}
+.edit-page .entry {
+	margin-top: 10px;
+} 
