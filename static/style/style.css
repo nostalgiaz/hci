@@ -120,7 +120,7 @@ table td i {
 
 .histogram-container {
   position: relative;
-  height: 50%;
+  height: 80%;
   width: 100%;
 }
 
@@ -190,4 +190,27 @@ h5 em {
   font-size: 15px;
   color: #333;
   width: 100%;
+}
+
+.fa-star {
+  cursor: pointer;
+}
+
+.star-colored {
+  color: goldenrod;
+}
+
+.bar-colored {
+  border-color: goldenrod;
+}
+
+@-webkit-keyframes change-color /* Safari and Chrome */
+{
+  0% {color: white;}
+  50% {color: goldenrod;}
+  100% {color: white;}
+}
+
+.endorsement-colored {
+  -webkit-animation: change-color .5s;
 }
