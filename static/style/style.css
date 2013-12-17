@@ -18,6 +18,8 @@ h5 {
 h3 {
   background: #333;
   margin: 0 0 5px;
+  line-height: 40px;
+  box-sizing: border-box;
   padding-left: 20px;
   padding-bottom: 5px;
 }
@@ -236,4 +238,12 @@ h5 em {
 
 [data-time="now"] > strong {
   color: goldenrod;
+}
+
+#search-box {
+	height: 29px;
+}
+
+.has-form{
+	width: 800px;
 }
