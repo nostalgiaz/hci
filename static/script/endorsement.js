@@ -22,7 +22,8 @@
       , $endorsementStar = $open.find('.fa-star')
       , $menuEl = $menu.find('.row')
       , $oldEl = $menuEl.find('[data-time="now"][data-name="' + value + '"]')
-      , $bar = $this.siblings().find('.student-bar');
+      , $bar = $this.siblings().find('.student-bar')
+      , $barValue = $bar.siblings('.bar-value');
 
     $this.toggleClass('star-colored');
     $bar.toggleClass('bar-colored');
@@ -34,14 +35,16 @@
     if ($oldEl.length === 1) {
       $oldEl.remove();
       $endorsement.html(parseInt($endorsement.html(), 10) - 1);
-      $bar.data('val', parseInt($bar.data('val'), 10) - 1);
+      $bar.data('val', parseInt($bar.data('val'), 10) - 5);
+      $barValue.html(parseInt($barValue.html(), 10) - 1);
       $bar.width($bar.data('val') + '%');
       return;
     }
 
     $menuEl.prepend(el);
     $endorsement.html(parseInt($endorsement.html(), 10) + 1);
-    $bar.data('val', parseInt($bar.data('val'), 10) + 1);
+    $bar.data('val', parseInt($bar.data('val'), 10) + 5);
+    $barValue.html(parseInt($barValue.html(), 10) + 1);
     $bar.width($bar.data('val') + '%');
   });
 })();

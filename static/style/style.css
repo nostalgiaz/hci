@@ -115,7 +115,7 @@ table td i {
   float: left;
   height: 100%;
   margin-left: 10px;
-  width: 140px;
+  width: 150px;
 }
 
 .histogram-container {
@@ -125,6 +125,7 @@ table td i {
 }
 
 .histogram-bar {
+  display: inline-block;
   height: 100%;
   border: 1px solid white;
 }
@@ -192,6 +193,11 @@ h5 em {
   width: 100%;
 }
 
+#menu .row {
+  overflow: scroll;
+  height: 100%;
+}
+
 .fa-star {
   cursor: pointer;
 }
@@ -206,11 +212,24 @@ h5 em {
 
 @-webkit-keyframes change-color /* Safari and Chrome */
 {
-  0% {color: white;}
-  50% {color: goldenrod;}
-  100% {color: white;}
+  0% {
+    color: white;
+  }
+  50% {
+    color: goldenrod;
+  }
+  100% {
+    color: white;
+  }
 }
 
 .endorsement-colored {
   -webkit-animation: change-color .5s;
+}
+
+.bar-value {
+  line-height: 100%;
+  vertical-align: top;
+  font-size: 16px;
+  margin-left: 5px;
 }
