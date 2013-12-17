@@ -33,6 +33,10 @@ i {
   font-style: normal;
 }
 
+h1 small {
+  color: #ccc;
+}
+
 .row {
   max-width: 100%;
 }
@@ -258,4 +262,13 @@ legend{
 .login img{
 	height: 100px;
 	margin-top: 20px;
+}
+
+#edit {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  /*color: gainsboro;*/
+  padding: 10px;
 }
