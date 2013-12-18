@@ -5,200 +5,231 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/foundation/5.0.2/css/foundation.min.css" />
     <link rel="stylesheet" href="static/style/fontawesome/font-awesome.min.css" />
     <link rel="stylesheet" href="static/style/style.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 </head>
 <body class="edit-page" style="background: url(static/image/home.jpg) fixed right;">
+	
+	<nav class="top-bar" data-topbar>
+	    <ul class="title-area">
+	        <li class="name">
+	            <h1><a href="#">MyCanVas</a></h1>
+	        </li>
+	    </ul>
+	
+	    <section class="top-bar-section">
+	        <ul class="right">
+	            <li><a href="login.html">Logout</a></li>
+	        </ul>
+	
+	        <ul class="left">
+	            <li class="has-form">
+	                <div class="row collapse">
+	                    <div class="large-11 columns">
+	                        <input id="search-box" type="text" placeholder="Search...">
+	                    </div>
+	                    <div class="large-1 columns">
+	                        <a href="#" class="secondary button expand"><i class="fa-search"></i></a>
+	                    </div>
+	                </div>
+	            </li>
+	        </ul>
+	    </section>
+	</nav>
+	
+	<div class="row">
+	    <div id="sidebar" class="medium-6 large-offset-1">
+	        <!--<div class="row">-->
+	        <!--<div id="head" class="large-8 large-offset-1"></div>-->
+	        <!--</div>-->
+	        <div class="row">
+	            <div id="bio" class="large-12 large-offset-1">
+	                <div class="row">
+	                    <img src="static/image/marco.jpg" alt="marco" style="position: absolute; top: 10px; left: -100px;">
+	
+	                    <div class="large-10 large-offset-2 column">
+	                        <h1 style="margin-top: 20px"><input id="title" type="text" placeholder="Name and surname" value="Marco Finnico"></input></h1>
+	
+	                        <a id="edit" href="private_mio.html" class="button"><!-- <i class="fa-cogs"></i> --> Save</a>
+	                        
+	                        <a id="customize" data-reveal-id="myModal" class="button"><i class="fa-magic"></i> customize</a>
+	                        
+	                        <div id="description">
+	                            <textarea id="about-me" placeholder="Something about you">I'm a 21 years old developer. I love coding and designing beautiful interfaces.</textarea>
+	                        </div>
+	
+	                        <hr />
+	
+	                        <div id="social" class="row">
+	                            <div class="large-12">
+	                                <ul>
+	                                	<li>
+	                                		<span class="social-icon"><i class="fa-inbox"></i></span><input type="text" class="social-edit" placeholder="email" value="marco.finnico@gmail.com"></input>
+	                                	</li>
+	                                	<li>
+	                                		<span class="social-icon"><i class="fa-facebook"></i></span><input type="text" class="social-edit" placeholder="URL" value="marco.finnico"></input>
+	                                	</li>
+	                                	<li>
+	                                		<span class="social-icon"><i class="fa-twitter"></i></span><input type="text" class="social-edit" placeholder="URL" value="marco_fin"></input>
+	                                	</li>
+	                                	<li>
+	                                		<span class="social-icon"><i class="fa-linkedin"></i></span><input type="text" class="social-edit" placeholder="username" value="marco.finnico"></input>
+	                                	</li>
+	                                	<li>
+		                                	<span class="social-icon"><i class="fa-github"></i></span><input type="text" class="social-edit" placeholder="username" value="finnick"></input>
+		                                </li>
+	                                </ul>
+	                            </div>
+	                        </div>
+	                        
+	                        <div id="customize-tab" class="display-none">
+	                        	<hr />
+		                         <ul>
+	                                	<li id="header-color">
+	                                		header color: 
+	                                		<i class="fa-circle" data-color=" goldenrod" style="color: goldenrod"></i>
+	                                		<i class="fa-circle" data-color="#1879A0" style="color: #1879A0"></i>
+	                                		<i class="fa-circle" data-color="#F04124" style="color: #F04124"></i>
+	                                		<i class="fa-circle" data-color="#43AC6A" style="color: #43AC6A"></i>
+	                                		<i class="fa-circle" data-color="#5B5A5D" style="color: #5B5A5D"></i>
+	                                	</li>
+	                                	<li id="box-color">
+	                                		box opacity:
+	                                		<div id="slider" class="opacity-slider"></div>
+	                                	</li><!--
 
-<nav class="top-bar" data-topbar>
-    <ul class="title-area">
-        <li class="name">
-            <h1><a href="#">MyCanVas</a></h1>
-        </li>
-    </ul>
-
-    <section class="top-bar-section">
-        <ul class="right">
-            <li><a href="login.html">Logout</a></li>
-        </ul>
-
-        <ul class="left">
-            <li class="has-form">
-                <div class="row collapse">
-                    <div class="large-11 columns">
-                        <input id="search-box" type="text" placeholder="Search...">
-                    </div>
-                    <div class="large-1 columns">
-                        <a href="#" class="secondary button expand"><i class="fa-search"></i></a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </section>
-</nav>
-
-<div class="row">
-    <div id="sidebar" class="medium-6 large-offset-1">
-        <!--<div class="row">-->
-        <!--<div id="head" class="large-8 large-offset-1"></div>-->
-        <!--</div>-->
-        <div class="row">
-            <div id="bio" class="large-12 large-offset-1">
-                <div class="row">
-                    <img src="static/image/marco.jpg" alt="marco" style="position: absolute; top: 10px; left: -100px;">
-
-                    <div class="large-10 large-offset-2 column">
-                        <h1 style="margin-top: 20px"><input id="title" type="text" placeholder="Name and surname" value="Marco Finnico"></input></h1>
-
-                        <a id="edit" href="private_mio.html" class="button"><!-- <i class="fa-cogs"></i> --> Save</a>
-                        <div id="description">
-                            <textarea id="about-me" placeholder="Something about you">I'm a 21 years old developer. I love coding and designing beautiful interfaces.</textarea>
-                        </div>
-
-                        <hr />
-
-                        <div id="social" class="row">
-                            <div class="large-12">
-                                <ul>
-                                	<li>
-                                		<span class="social-icon"><i class="fa-inbox"></i></span><input type="text" class="social-edit" placeholder="email" value="marco.finnico@gmail.com"></input>
-                                	</li>
-                                	<li>
-                                		<span class="social-icon"><i class="fa-facebook"></i></span><input type="text" class="social-edit" placeholder="URL" value="marco.finnico"></input>
-                                	</li>
-                                	<li>
-                                		<span class="social-icon"><i class="fa-twitter"></i></span><input type="text" class="social-edit" placeholder="URL" value="marco_fin"></input>
-                                	</li>
-                                	<li>
-                                		<span class="social-icon"><i class="fa-linkedin"></i></span><input type="text" class="social-edit" placeholder="username" value="marco.finnico"></input>
-                                	</li>
-                                	<li>
-	                                	<span class="social-icon"><i class="fa-github"></i></span><input type="text" class="social-edit" placeholder="username" value="finnick"></input>
-	                                </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div id="info" class="large-8 large-offset-1">
-                <h3>My Info</h3>
-                <table>
-                    <tr>
-                        <td>Birthday</td>
-                        <td>04/05/1992</td>
-                    </tr>
-                    <tr>
-                        <td>Citizenship</td>
-                        <td>Italian</td>
-                    </tr>
-                    <tr>
-                        <td>Current Occupation</td>
-                        <td>Informatics</td>
-                    </tr>
-                    <tr>
-                        <td>Academic year</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>CFU</td>
-                        <td>180.0/180.0</td>
-                    </tr>
-                    <tr>
-                        <td>Marks</td>
-                        <td>16</td>
-                    </tr>
-                    <tr>
-                        <td>Average Grade</td>
-                        <td>28.34</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="row">
-            <div id="work" class="large-8 large-offset-1">
-                <h3>My Work</h3>
-
-                <div class="entry">
-                    <h4><input type="text" placeholder="position" value="Frontender @ SpazioDati"></h4>
-                    <em><input type="text" placeholder="period" value="from 2014 to today"></em>
-                    <a class="button add-position"><i class="fa-plus"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div id="edu" class="large-8 large-offset-1">
-                <h3>My Education</h3>
-
-                <div class="entry">
-                    <h4><input type="text" placeholder="university" value="Computer Science @ UniTN"></h4>
-                    <em><input type="text" placeholder="period" value="from 2012 to today"></em>
-                    <a class="button add-position"><i class="fa-plus"></i></a>
-                </div>
-                
-            </div>
-        </div>
-        <div class="row">
-            <div id="skills" class="large-8 large-offset-1">
-                <h3>My Skills</h3>
-                <table>
-                    <tr id="C">
-                        <td>C++</td>
-                        <td>
-                            <i class="fa-times" data-name="C"></i>
-                        </td>
-                    </tr>
-                    <tr id="HTML">
-                        <td>HTML</td>
-                        <td>
-                            <i class="fa-times" data-name="HTML"></i>
-                        </td>
-                    </tr>
-                    <tr id="CSS">
-                        <td>CSS</td>
-                        <td>
-                            <i class="fa-times" data-name="CSS"></i>
-                        </td>
-                    </tr>
-                    <tr id="Linux">
-                        <td>Linux</td>
-                        <td>
-                            <i class="fa-times" data-name="Linux"></i>
-                        </td>
-                    </tr>
-                    <tr id="Photo">
-                        <td>Photo</td>
-                        <td>
-                            <i class="fa-times" data-name="Photo"></i>
-                        </td>
-                    </tr>
-                    <tr id="Music">
-                        <td>Music</td>
-                        <td>
-                            <i class="fa-times" data-name="Music"></i>
-                        </td>
-                    </tr>
-                    <tr id="Teamwork">
-                        <td>Teamwork</td>
-                        <td>
-                            <i class="fa-times" data-name="Teamwork"></i>
-                        </td>
-                    </tr>
-                    <tr class="add-cell">
-                    	<td>
-		                    <a class="button add-skill"><i class="fa-plus"></i></a>
-                    	</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="large-6"></div>
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script src="static/script/endorsement.js"></script>
-<script src="static/script/stars_mio.js"></script>
-<script src="static/script/edit.js"></script>
+	                                	<li id="theme-color">
+	                                		theme: <i id="dark-theme" class="fa-certificate"></i> <i id="light-theme" class="fa-sun-o"></i>
+	                                	</li>
+-->
+		                         </ul>
+	                        </div>
+	
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="row">
+	            <div id="info" class="large-8 large-offset-1">
+	                <h3>My Info</h3>
+	                <table>
+	                    <tr>
+	                        <td>Birthday</td>
+	                        <td>04/05/1992</td>
+	                    </tr>
+	                    <tr>
+	                        <td>Citizenship</td>
+	                        <td>Italian</td>
+	                    </tr>
+	                    <tr>
+	                        <td>Current Occupation</td>
+	                        <td>Informatics</td>
+	                    </tr>
+	                    <tr>
+	                        <td>Academic year</td>
+	                        <td>3</td>
+	                    </tr>
+	                    <tr>
+	                        <td>CFU</td>
+	                        <td>180.0/180.0</td>
+	                    </tr>
+	                    <tr>
+	                        <td>Marks</td>
+	                        <td>16</td>
+	                    </tr>
+	                    <tr>
+	                        <td>Average Grade</td>
+	                        <td>28.34</td>
+	                    </tr>
+	                </table>
+	            </div>
+	        </div>
+	        <div class="row">
+	            <div id="work" class="large-8 large-offset-1">
+	                <h3>My Work</h3>
+	
+	                <div class="entry">
+	                    <h4><input type="text" placeholder="position" value="Frontender @ SpazioDati"></h4>
+	                    <em><input type="text" placeholder="period" value="from 2014 to today"></em>
+	                    <a class="button add-position"><i class="fa-plus"></i></a>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="row">
+	            <div id="edu" class="large-8 large-offset-1">
+	                <h3>My Education</h3>
+	
+	                <div class="entry">
+	                    <h4><input type="text" placeholder="university" value="Computer Science @ UniTN"></h4>
+	                    <em><input type="text" placeholder="period" value="from 2012 to today"></em>
+	                    <a class="button add-position"><i class="fa-plus"></i></a>
+	                </div>
+	                
+	            </div>
+	        </div>
+	        <div class="row">
+	            <div id="skills" class="large-8 large-offset-1">
+	                <h3>My Skills</h3>
+	                <table>
+	                    <tr id="C">
+	                        <td>C++</td>
+	                        <td>
+	                            <i class="fa-times" data-name="C"></i>
+	                        </td>
+	                    </tr>
+	                    <tr id="HTML">
+	                        <td>HTML</td>
+	                        <td>
+	                            <i class="fa-times" data-name="HTML"></i>
+	                        </td>
+	                    </tr>
+	                    <tr id="CSS">
+	                        <td>CSS</td>
+	                        <td>
+	                            <i class="fa-times" data-name="CSS"></i>
+	                        </td>
+	                    </tr>
+	                    <tr id="Linux">
+	                        <td>Linux</td>
+	                        <td>
+	                            <i class="fa-times" data-name="Linux"></i>
+	                        </td>
+	                    </tr>
+	                    <tr id="Photo">
+	                        <td>Photo</td>
+	                        <td>
+	                            <i class="fa-times" data-name="Photo"></i>
+	                        </td>
+	                    </tr>
+	                    <tr id="Music">
+	                        <td>Music</td>
+	                        <td>
+	                            <i class="fa-times" data-name="Music"></i>
+	                        </td>
+	                    </tr>
+	                    <tr id="Teamwork">
+	                        <td>Teamwork</td>
+	                        <td>
+	                            <i class="fa-times" data-name="Teamwork"></i>
+	                        </td>
+	                    </tr>
+	                    <tr class="add-cell">
+	                    	<td>
+			                    <a class="button add-skill"><i class="fa-plus"></i></a>
+	                    	</td>
+	                    </tr>
+	                </table>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="large-6"></div>
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="static/script/endorsement.js"></script>
+	<script src="static/script/stars_mio.js"></script>
+	<script src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script>
+		$( "#slider" ).slider({'value' : 90});
+	</script>
+	<script src="static/script/edit.js"></script>
 </body>
 </html>

@@ -28,4 +28,35 @@
 	  $num = $num+1;
   });
   
+  $('#customize').on('click', function () {
+  		var $tab = $('#customize-tab');
+  		$tab.toggleClass('display-none display-block');
+  });
+  
+/* change header color   */
+  $('#header-color i').on('click', function () {
+  	  var $col = $(this).data('color');
+	  $('h3').each(function () {
+		  $(this).css({"background-color" : $col });
+	  });
+	  $('td').each(function () {
+		  $(this).css({"color" : $col}); 
+	  }); 
+	  $('#bio').css({"border-top" : "5px solid " + $col});
+  });
+  
+/* change box opacity  */
+  $('#slider').on('slidechange', function () {
+	  var value = $( "#slider" ).slider( "option", "value" ) / 100;
+	  $('#sidebar > .row > div').css({"background-color" : "rgba(0,0,0," + value + ")"});
+  });
+
+/* change theme   */
+	$('#dark-theme').on('click', function () {
+		$('#sidebar > .row > div').css({"background-color" : "black"});
+	});
+	$('#light-theme').on('click', function () {
+		$('#sidebar > .row > div').css({"background-color" : "white"});
+	});
+	
 })();

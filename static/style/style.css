@@ -25,7 +25,7 @@ background-color: goldenrod /* #1778A5 */;
   padding-bottom: 5px;
 }
 table tr > td:first-child {
-	color: goldenrod /* #1778A5 */ !important;
+	color: goldenrod /* #1778A5 */;
 }
 
 em {
@@ -102,10 +102,11 @@ table td {
   width: 50% !important;
   /*background: white !important;*/
   background: transparent !important;
-  color: white !important;
   height: 20px;
 }
-
+table td:last-child{
+	color: white !important;
+}
 table tr.even, table tr.alt, table tr:nth-of-type(even) {
   background: transparent;
 }
@@ -291,7 +292,37 @@ legend {
   /*color: gainsboro;*/
   padding: 10px;
 }
-
+#customize {
+	position: absolute;
+	bottom: -20px;
+	right: 20px;
+	font-size: 15px;
+	padding: 10px;
+}
+#customize-tab {
+	position: relative;
+	margin-bottom: 60px;
+	text-align: right;
+	margin-right: 10px;
+}
+#customize-tab ul li i {
+	font-size: 20px;
+}
+#customize-tab ul li i:first-child{
+	margin-left: 10px;
+}
+#customize-tab ul li i:hover {
+	cursor: pointer;
+}
+#customize-tab ul {
+	list-style: none;
+}
+.display-none {
+	display: none;
+}
+.display-block {
+	display: block;
+}
 #title {
 	width: 70%;
 	height: 54px;
@@ -354,4 +385,9 @@ legend {
 	margin: 0 !important;
 	height: 30px;
 	line-height: 30px;
+}
+.opacity-slider {
+	display: inline-block;
+	width: 100px;
+	margin-left: 20px;
 }
