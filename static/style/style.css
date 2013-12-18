@@ -16,12 +16,16 @@ h5 {
 }
 
 h3 {
-  background: #333;
+/*   background: rgba(45,45,45,0.6); */
+background-color: goldenrod /* #1778A5 */;
   margin: 0 0 5px;
   line-height: 40px;
   box-sizing: border-box;
   padding-left: 20px;
   padding-bottom: 5px;
+}
+table tr > td:first-child {
+	color: goldenrod /* #1778A5 */ !important;
 }
 
 em {
@@ -52,7 +56,7 @@ h1 small {
 }
 
 #bio {
-  border-top: 5px solid #333;
+  border-top: 5px solid goldenrod /* #1778A5 */;
   margin-top: 50px !important;
   /*border-color: #333;*/
   /*border-color: rgba(255, 255, 255, 0.8);*/
@@ -203,9 +207,15 @@ h5 em {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 15px;
-  color: #333;
+  font-size: 20px;
+  color: #000;
   width: 100%;
+}
+#open i{
+	color: #fff;
+}
+#open{
+	/* background-color: red; */
 }
 
 #menu .row {
@@ -323,4 +333,25 @@ legend {
 }
 .add-position i {
 	line-height: 40px;
+}
+.add-skill {
+	padding: 5px !important;
+	width: 30%;
+	text-align: center;
+	display: inline-block;
+}
+.add-skill i {
+	display: inline-block;
+	float: none !important;
+}
+#skills .add-skill i:hover {
+	color: #fff;
+}
+#skills input {
+	display: inline-block;
+	text-align: right;
+	width: 80px;
+	margin: 0 !important;
+	height: 30px;
+	line-height: 30px;
 }
