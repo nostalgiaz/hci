@@ -206,11 +206,18 @@ h5 em {
 
 #open > span {
   position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 20px;
-  color: #000;
-  width: 100%;
+  top: 17px;
+  left: 17px;
+  line-height: 16px;
+  height: auto;
+  width: 24px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  padding: 2px;
+  border-radius: 20px;
+  border: 2px solid #ff6767;
+  background-color: red;
 }
 #open i{
 	color: #fff;
