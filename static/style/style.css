@@ -16,16 +16,18 @@ h5 {
 }
 
 h3 {
-/*   background: rgba(45,45,45,0.6); */
-background-color: goldenrod /* #1778A5 */;
+     background: #333;
+  /*background-color: goldenrod *//* #1778A5 *//*;*/
   margin: 0 0 5px;
   line-height: 40px;
   box-sizing: border-box;
   padding-left: 20px;
   padding-bottom: 5px;
 }
+
 table tr > td:first-child {
-	color: goldenrod /* #1778A5 */;
+  color: #ccc;
+  /*color: goldenrod *//* #1778A5 *//*;*/
 }
 
 em {
@@ -56,12 +58,12 @@ h1 small {
 }
 
 #bio {
-  border-top: 5px solid goldenrod /* #1778A5 */;
+  /*border-top: 5px solid goldenrod *//* #1778A5 *//*;*/
   margin-top: 50px !important;
-  /*border-color: #333;*/
+  border-color: #333;
   /*border-color: rgba(255, 255, 255, 0.8);*/
-  /*border-style: solid;*/
-  /*border-width: 1px 2px;*/
+  border-style: solid;
+  border-width: 5px 0 0 0;
   /*border-width: 1px 0;*/
 }
 
@@ -104,9 +106,11 @@ table td {
   background: transparent !important;
   height: 20px;
 }
-table td:last-child{
-	color: white !important;
+
+table td:last-child {
+  color: white !important;
 }
+
 table tr.even, table tr.alt, table tr:nth-of-type(even) {
   background: transparent;
 }
@@ -179,16 +183,19 @@ table td i {
   text-align: right;
   font-size: 20px;
 }
+
 #social > div > ul {
   text-align: left;
   list-style: none;
 }
+
 #social > div > ul i {
   text-align: left;
   font-size: 25px;
   vertical-align: middle;
   display: inline-block;
 }
+
 #social i {
   padding: 0 2px;
   cursor: pointer;
@@ -198,10 +205,12 @@ h5 em {
   text-align: right;
   display: block;
 }
+
 #open {
-	top: 0px;
-	right: 5px;
+  top: 0px;
+  right: 5px;
 }
+
 #open > span {
   position: absolute;
   top: 8px;
@@ -216,11 +225,13 @@ h5 em {
   border: 2px solid #ff6767;
   background-color: red;
 }
-#open i{
-	color: #fff;
+
+#open i {
+  color: #fff;
 }
-#open{
-	/* background-color: red; */
+
+#open {
+  /* background-color: red; */
 }
 
 #menu .row {
@@ -269,23 +280,25 @@ h5 em {
 }
 
 #search-box {
-	height: 29px;
+  height: 29px;
 }
 
 .has-form {
-	width: 800px;
+  width: 800px;
 }
 
 legend {
-	color: black;
+  color: black;
 }
+
 .login {
-	margin-top: 10%;
-	text-align: center;
+  margin-top: 10%;
+  text-align: center;
 }
+
 .login img {
-	height: 100px;
-	margin-top: 20px;
+  height: 100px;
+  margin-top: 20px;
 }
 
 #edit {
@@ -296,102 +309,125 @@ legend {
   /*color: gainsboro;*/
   padding: 10px;
 }
+
 #customize {
-	/*position: absolute;*/
-	/*bottom: -20px;*/
-	/*right: 20px;*/
-	font-size: 15px;
-	padding: 10px;
+  /*position: absolute;*/
+  /*bottom: -20px;*/
+  /*right: 20px;*/
+  font-size: 15px;
+  padding: 10px;
 }
+
 #customize-tab {
-	position: relative;
-	margin-bottom: 60px;
-	text-align: right;
-	margin-right: 10px;
+  position: relative;
+  margin-bottom: 60px;
+  text-align: right;
+  margin-right: 10px;
 }
+
 #customize-tab ul li i {
-	font-size: 20px;
+  font-size: 20px;
 }
-#customize-tab ul li i:first-child{
-	margin-left: 10px;
+
+#customize-tab ul li i:first-child {
+  margin-left: 10px;
 }
+
 #customize-tab ul li i:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
+
 #customize-tab ul {
-	list-style: none;
+  list-style: none;
 }
+
 .display-none {
-	display: none;
+  display: none;
 }
+
 .display-block {
-	display: block;
+  display: block;
 }
+
 #title {
-	width: 70%;
-	height: 54px;
-	font-size: 30px;
+  width: 70%;
+  height: 54px;
+  font-size: 30px;
 }
+
 #about-me {
-	height: 80px;
-	resize:none;
+  height: 80px;
+  resize: none;
 }
+
 .social-edit {
-	display: inline-block !important;
-	margin-left: 10px !important;
-	width: 200px !important;
+  display: inline-block !important;
+  margin-left: 10px !important;
+  width: 200px !important;
 }
+
 .social-icon {
-	display: inline-block;
-	width: 30px;
+  display: inline-block;
+  width: 30px;
 }
+
 .edit-page .entry input {
-	width: 80% !important;
+  width: 80% !important;
 }
+
 .edit-page .entry {
-	margin-top: 10px;
-} 
+  margin-top: 10px;
+}
+
 .edit-page #skills i {
-	cursor: pointer;
-	font-size: 20px;
+  cursor: pointer;
+  font-size: 20px;
 }
+
 .edit-page #skills i:hover {
-	color: #ab0000;
+  color: #ab0000;
 }
+
 .add-position {
-	width: 80%;
-	height: 40px;
-	font-size: 20px;
-	display: inline-block;
-	vertical-align: bottom;
-	padding: 0;
+  width: 80%;
+  height: 40px;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 0;
 }
+
 .add-position i {
-	line-height: 40px;
+  line-height: 40px;
 }
+
 .add-skill {
-	padding: 5px !important;
-	width: 30%;
-	text-align: center;
-	display: inline-block;
+  padding: 5px !important;
+  width: 30%;
+  text-align: center;
+  display: inline-block;
 }
+
 .add-skill i {
-	display: inline-block;
-	float: none !important;
+  display: inline-block;
+  float: none !important;
 }
+
 #skills .add-skill i:hover {
-	color: #fff;
+  color: #fff;
 }
+
 #skills input {
-	display: inline-block;
-	text-align: right;
-	width: 80px;
-	margin: 0 !important;
-	height: 30px;
-	line-height: 30px;
+  display: inline-block;
+  text-align: right;
+  width: 80px;
+  margin: 0 !important;
+  height: 30px;
+  line-height: 30px;
 }
+
 .opacity-slider {
-	display: inline-block;
-	width: 100px;
-	margin-left: 20px;
+  display: inline-block;
+  width: 100px;
+  margin-left: 20px;
 }
