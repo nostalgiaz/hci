@@ -167,16 +167,11 @@ table td i {
 
 .menu-button {
   position: absolute;
-  top: 20%;
-  left: -80px;
-  height: 80px;
-  width: 80px;
-  background-color: rgba(0, 0, 0, 0.9);
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
-  font-size: 50px;
-  line-height: 80px;
+  font-size: 40px;
+  line-height: 45px;
 }
 
 #social > div {
@@ -203,18 +198,20 @@ h5 em {
   text-align: right;
   display: block;
 }
-
+#open {
+	top: 0px;
+	right: 5px;
+}
 #open > span {
   position: absolute;
-  top: 17px;
-  left: 17px;
+  top: 8px;
+  left: 5px;
   line-height: 16px;
   height: auto;
-  width: 24px;
+  width: 20px;
   font-size: 14px;
   font-weight: bold;
   color: #fff;
-  padding: 2px;
   border-radius: 20px;
   border: 2px solid #ff6767;
   background-color: red;

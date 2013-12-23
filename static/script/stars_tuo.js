@@ -5,7 +5,7 @@
     , $menu = $('#menu')
     , $open = $('#open');
 
-  $skills.find('.fa-star').on('click', function () {
+  $skills.find('table .fa-star').on('click', function () {
     var $this = $(this)
       , value = $this.data('name')
       , el = '<h5 data-time="now" data-name="' + value + '"><strong>Marco Finnico</strong> confirmed <strong>' + value + '</strong><em>23 december 2013</em></h5><hr />'
