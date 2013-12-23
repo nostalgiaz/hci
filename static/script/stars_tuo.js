@@ -8,7 +8,7 @@
   $skills.find('table .fa-star').on('click', function () {
     var $this = $(this)
       , value = $this.data('name')
-      , el = '<h5 data-time="now" data-name="' + value + '"><strong>Marco Finnico</strong> confirmed <strong>' + value + '</strong><em>23 december 2013</em></h5><hr />'
+      , el = '<h5 data-time="now" data-name="' + value + '"><strong>Marco Finnico</strong> confirmed <strong>' + value + '</strong><em>23 december 2013</em></h5>'
       , $endorsement = $open.find('span')
       , $endorsementStar = $open.find('.fa-star')
       , $menuEl = $menu.find('.row')
