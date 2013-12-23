@@ -42,17 +42,15 @@
 	        <!--<div id="head" class="large-8 large-offset-1"></div>-->
 	        <!--</div>-->
 	        <div class="row">
-	            <div id="bio" class="large-12 large-offset-1">
+	            <div id="bio" class="large-12 large-offset-1" style="padding-bottom: 0;">
 	                <div class="row">
 	                    <img src="static/image/marco.jpg" alt="marco" style="position: absolute; top: 10px; left: -100px;">
 	
 	                    <div class="large-10 large-offset-2 column">
-	                        <h1 style="margin-top: 20px"><input id="title" type="text" placeholder="Name and surname" value="Marco Finnico"></input></h1>
+	                        <h1 style="margin-top: 20px"><input id="title" type="text" placeholder="Name and surname" value="Marco Finnico" /></h1>
 	
 	                        <a id="edit" href="private_mio.html" class="button"><!-- <i class="fa-cogs"></i> --> Save</a>
-	                        
-	                        <a id="customize" data-reveal-id="myModal" class="button"><i class="fa-magic"></i> customize</a>
-	                        
+
 	                        <div id="description">
 	                            <textarea id="about-me" placeholder="Something about you">I'm a 21 years old developer. I love coding and designing beautiful interfaces.</textarea>
 	                        </div>
@@ -61,26 +59,29 @@
 	
 	                        <div id="social" class="row">
 	                            <div class="large-12">
-	                                <ul>
+	                                <ul style="margin-bottom: 0;">
 	                                	<li>
-	                                		<span class="social-icon"><i class="fa-inbox"></i></span><input type="text" class="social-edit" placeholder="email" value="marco.finnico@gmail.com"></input>
+	                                		<span class="social-icon"><i class="fa-inbox"></i></span><input type="text" class="social-edit" placeholder="email" value="marco.finnico@gmail.com">
 	                                	</li>
 	                                	<li>
-	                                		<span class="social-icon"><i class="fa-facebook"></i></span><input type="text" class="social-edit" placeholder="URL" value="marco.finnico"></input>
+	                                		<span class="social-icon"><i class="fa-facebook"></i></span><input type="text" class="social-edit" placeholder="URL" value="marco.finnico">
 	                                	</li>
 	                                	<li>
-	                                		<span class="social-icon"><i class="fa-twitter"></i></span><input type="text" class="social-edit" placeholder="URL" value="marco_fin"></input>
+	                                		<span class="social-icon"><i class="fa-twitter"></i></span><input type="text" class="social-edit" placeholder="URL" value="marco_fin">
 	                                	</li>
 	                                	<li>
-	                                		<span class="social-icon"><i class="fa-linkedin"></i></span><input type="text" class="social-edit" placeholder="username" value="marco.finnico"></input>
+	                                		<span class="social-icon"><i class="fa-linkedin"></i></span><input type="text" class="social-edit" placeholder="username" value="marco.finnico">
 	                                	</li>
 	                                	<li>
-		                                	<span class="social-icon"><i class="fa-github"></i></span><input type="text" class="social-edit" placeholder="username" value="finnick"></input>
+		                                	<span class="social-icon"><i class="fa-github"></i></span><input type="text" class="social-edit" placeholder="username" value="finnick">
 		                                </li>
 	                                </ul>
+                                    <a id="customize" data-reveal-id="myModal" class="button"><i class="fa-magic"></i> show style settings</a>
+
 	                            </div>
 	                        </div>
-	                        
+
+
 	                        <div id="customize-tab" class="display-none">
 	                        	<hr />
 		                         <ul>
